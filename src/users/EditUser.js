@@ -39,11 +39,11 @@ export default function EditUser() {
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
-          <h2 className="text-center m-4">Edit User</h2>
+        <div className="col-md-6 offset-md-3 border border-dark rounded p-4 mt-2 shadow">
+          <h2 className="text-center m-4 fw-bold text-danger">Edit User</h2>
 
           <form onSubmit={(e) => onSubmit(e)}>
-            <div className="mb-3">
+            <div className="mb-3 text-start fw-bold">
               <label htmlFor="Name" className="form-label">
                 Name
               </label>
@@ -56,7 +56,7 @@ export default function EditUser() {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
-            <div className="mb-3">
+            <div className="mb-3 text-start fw-bold">
               <label htmlFor="Username" className="form-label">
                 Username
               </label>
@@ -69,7 +69,7 @@ export default function EditUser() {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
-            <div className="mb-3">
+            <div className="mb-3 text-start fw-bold">
               <label htmlFor="Password" className="form-label">
                Password
               </label>
@@ -82,7 +82,7 @@ export default function EditUser() {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
-            <div className="mb-3">
+            <div className="mb-3 text-start fw-bold">
               <label htmlFor="Email" className="form-label">
                 E-mail
               </label>
@@ -95,10 +95,10 @@ export default function EditUser() {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
-            <button type="submit" className="btn btn-outline-primary">
+            <button type="submit" className="btn border-2 btn-outline-primary fw-bold">
               Submit
             </button>
-            <Link className="btn btn-outline-danger mx-2" to="/">
+            <Link className="btn border-2 btn-outline-danger mx-2 fw-bold" to="/">
               Cancel
             </Link>
           </form>

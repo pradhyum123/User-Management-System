@@ -25,13 +25,13 @@ export default function AddUser() {
   };
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
-          <h2 className="text-center m-4">Register User</h2>
+    <div className="h-75 d-flex justify-content-center align-items-center">
+      <div className="row h-75 w-100">
+        <div className="col-md-6 offset-md-3 border border-dark rounded p-4 mt-2 shadow-opacity-5">
+          <h2 className="text-center m-4 text-primary fw-bold">Register User</h2>
 
           <form onSubmit={(e) => onSubmit(e)}>
-            <div className="mb-3">
+            <div className="mb-3 text-start text-black fw-bold">
               <label htmlFor="Name" className="form-label">
                 Name
               </label>
@@ -44,7 +44,7 @@ export default function AddUser() {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
-            <div className="mb-3">
+            <div className="mb-3 text-start text-black fw-bold">
               <label htmlFor="Username" className="form-label">
                 Username
               </label>
@@ -57,7 +57,7 @@ export default function AddUser() {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
-            <div className="mb-3">
+            <div className="mb-3 text-start text-black fw-bold">
               <label htmlFor="Password" className="form-label">
                 Password
               </label>
@@ -70,7 +70,7 @@ export default function AddUser() {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
-            <div className="mb-3">
+            <div className="mb-3 text-start text-black fw-bold">
               <label htmlFor="Email" className="form-label">
                 E-mail
               </label>
@@ -83,10 +83,10 @@ export default function AddUser() {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
-            <button type="submit" className="btn btn-outline-primary">
+            <button type="submit" className="btn border-2 btn-outline-primary fw-bold">
               Submit
             </button>
-            <Link className="btn btn-outline-danger mx-2" to="/">
+            <Link className="btn border-2 btn-outline-danger mx-2 fw-bold" to="/">
               Cancel
             </Link>
           </form>
