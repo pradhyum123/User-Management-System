@@ -1,14 +1,15 @@
-package com.codewitharjun.fullstackbackend;
+package com.springcrud.crud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class FullstackBackendApplication {
+public class CrudApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(FullstackBackendApplication.class, args);
-		System.out.println("Server started");
+		SpringApplication.run(CrudApplication.class, args);
+		System.out.println("Server Started");
+
 	}
 
 }
