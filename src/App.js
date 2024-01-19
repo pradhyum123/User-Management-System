@@ -6,10 +6,11 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import AddUser from "./users/AddUser";
 import EditUser from "./users/EditUser";
 import ViewUser from "./users/ViewUser";
+import img from "./users/img.avif"
 
 function App() {
   return (
-    <div className="App">
+    <div className="App vh-100" style={{backgroundImage:`URL(${img})`,backgroundRepeat:"no-repeat",backgroundSize:"cover"}}>
       <Router>
         <Navbar />
 

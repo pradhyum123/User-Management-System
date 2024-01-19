@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
+
 export default function AddUser() {
   let navigate = useNavigate();
 
@@ -25,14 +26,16 @@ export default function AddUser() {
   };
 
   return (
-    <div className="container">
-      <div className="row">
-        <div className="col-md-6 offset-md-3 border rounded p-4 mt-2 shadow">
-          <h2 className="text-center m-4">Register User</h2>
+    
+    <div className="h-75 d-flex justify-content-center align-items-center">
+    
+      <div className="row h-75 w-100">
+        <div className="col-md-6 offset-md-3 border border-dark rounded p-4 mt-2 shadow opacity-5">
+          <h2 className="text-center m-4 text-primary fw-bold">Register User</h2>
 
           <form onSubmit={(e) => onSubmit(e)}>
-            <div className="mb-3">
-              <label htmlFor="Name" className="form-label">
+            <div className="mb-3 text-start text-black">
+              <label htmlFor="Name" className="form-label fw-bold">
                 Name
               </label>
               <input
@@ -44,8 +47,8 @@ export default function AddUser() {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
-            <div className="mb-3">
-              <label htmlFor="Username" className="form-label">
+            <div className="mb-3 text-start text-black">
+              <label htmlFor="Username" className="form-label fw-bold">
                 Username
               </label>
               <input
@@ -57,8 +60,8 @@ export default function AddUser() {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
-            <div className="mb-3">
-              <label htmlFor="Password" className="form-label">
+            <div className="mb-3 text-start text-black">
+              <label htmlFor="Password" className="form-label fw-bold">
                 Password
               </label>
               <input
@@ -70,8 +73,8 @@ export default function AddUser() {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
-            <div className="mb-3">
-              <label htmlFor="Email" className="form-label">
+            <div className="mb-3 text-start text-black">
+              <label htmlFor="Email" className="form-label fw-bold">
                 E-mail
               </label>
               <input
@@ -83,10 +86,10 @@ export default function AddUser() {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
-            <button type="submit" className="btn btn-outline-primary">
+            <button type="submit" className="btn btn-outline-primary fw-bold">
               Submit
             </button>
-            <Link className="btn btn-outline-danger mx-2" to="/">
+            <Link className="btn btn-outline-danger mx-2 fw-bold" to="/">
               Cancel
             </Link>
           </form>

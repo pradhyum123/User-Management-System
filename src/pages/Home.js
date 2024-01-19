@@ -43,7 +43,7 @@ export default function Home() {
                 </th>
                 <td>{user.name}</td>
                 <td>{user.username}</td>
-                <td>{user.password}</td>
+                <td>{user.password.replace(/./g, '*')}</td>
                 <td>{user.email}</td>
                 <td>
                   <Link
