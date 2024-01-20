@@ -2,6 +2,7 @@ import axios from "axios";
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
+
 export default function AddUser() {
   let navigate = useNavigate();
 
@@ -25,6 +26,7 @@ export default function AddUser() {
   };
 
   return (
+
     <div className="h-75 d-flex justify-content-center align-items-center">
       <div className="row h-75 w-100">
         <div className="col-md-6 offset-md-3 border border-dark rounded p-4 mt-2 shadow-opacity-5">
@@ -33,6 +35,7 @@ export default function AddUser() {
           <form onSubmit={(e) => onSubmit(e)}>
             <div className="mb-3 text-start text-black fw-bold">
               <label htmlFor="Name" className="form-label">
+
                 Name
               </label>
               <input
@@ -44,8 +47,10 @@ export default function AddUser() {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
+
             <div className="mb-3 text-start text-black fw-bold">
               <label htmlFor="Username" className="form-label">
+
                 Username
               </label>
               <input
@@ -57,8 +62,10 @@ export default function AddUser() {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
+
             <div className="mb-3 text-start text-black fw-bold">
               <label htmlFor="Password" className="form-label">
+
                 Password
               </label>
               <input
@@ -70,8 +77,10 @@ export default function AddUser() {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
+
             <div className="mb-3 text-start text-black fw-bold">
               <label htmlFor="Email" className="form-label">
+
                 E-mail
               </label>
               <input
@@ -83,10 +92,12 @@ export default function AddUser() {
                 onChange={(e) => onInputChange(e)}
               />
             </div>
+
             <button type="submit" className="btn border-2 btn-outline-primary fw-bold">
               Submit
             </button>
             <Link className="btn border-2 btn-outline-danger mx-2 fw-bold" to="/">
+
               Cancel
             </Link>
           </form>

@@ -22,6 +22,7 @@ export default function ViewUser() {
   };
 
   return (
+
     <div className="container vh-100">
       <div className="row">
         <div className="col-md-6 offset-md-3 border border-dark rounded p-4 mt-2 shadow">
@@ -31,6 +32,7 @@ export default function ViewUser() {
             <div className="card-header">
               Details of user id : {user.id}
               <ul className="list-group list-group-flush">
+
                 <li className="list-group-item bg-transparent">
                   <b>Name : </b>
                   {user.name}
